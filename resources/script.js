@@ -118,3 +118,17 @@ document.getElementById("clearBtn").addEventListener("click", function () {
     callHistory = [];
 })
 
+// Simple animation for footer links
+document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.footer-links a');
+
+    links.forEach(link => {
+        link.addEventListener('mouseenter', function () {
+            this.style.transform = 'translateX(5px)';
+        });
+
+        link.addEventListener('mouseleave', function () {
+            this.style.transform = 'translateX(0)';
+        });
+    });
+});
