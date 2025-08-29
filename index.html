@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency-Hotline</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./resources/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-pri">
+    <section class="navbar">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="./assets/logo.png" alt="logo" class="w-16 h-16 rounded-full">
+            </div>
+            <div class="logo-text">
+                <h1 class="font-pri">Emergency<br>Service</h1>
+            </div>
+        </div>
+        <div class="nav-btns font-pri">
+            <div class="active" style="background-color: #41ff6a2a ;">
+                <span id="heartCount">0</span>
+                <img src="./assets/heart.png" alt="" class="nav-heart">
+            </div>
+            <div class="active" style="background-color: #41ff6a2a ;">
+                <span id="coinCnt">100</span>
+                <img src="./assets/coin.png" alt="" class="nav-coin">
+            </div>
+            <div id="copy" class="btn-pri active" style="color: white; width: 100px; text-align: center;">
+                <span id="copyCnt"> 0</span>Copy
+            </div>
+
+        </div>
+    </section>
+
+    <!--banner section-->
+
+    <section class="banner">
+
+        <img src="./assets/logo-dark.png" alt="banner">
+        <h1 class="bn-font">জরুরি সেবা ডিরেক্টরি</h1>
+        <p>Government Emergency Services at Your Fingertip
+            - A Project by Government of the People’s Republic of Bangladesh
+        </p>
+    </section>
+
+    <!--main section-->
+
+    <section class="main font-pri">
+        <div class="service-card-container">
+            <div class="service-card">
+                <div class="card-icon-parent">
+                    <div class="card-icon">
+                        <div class="card-icon-child" style="background-color: #FFE3E2;">
+                        </div>
+                        <img class="card-icon-img" alt="" src="./assets/emergency.png">
+                    </div>
+                    <img class="heart-icon" alt="" src="./assets/heart2.png">
+                </div>
+                <div class="card-frame-parent">
+                    <div class="card-parent">
+                        <h1 class="card-head bn-font">জাতীয় জরুরি সেবা</h1>
+                        <div class="card-sub-head font-pri" id="nEs">National Emergency Service</div>
+                    </div>
+                    <div class="card-title-parent">
+                        <p class="number font-pri">999</p>
+                        <div class="card-title-bg">
+                            <p class="card-title bn-font">সার্বজনীন</p>
+                        </div>
+                    </div>
+                    <div class="card-button-parent">
+                        <button class="copy-button btn">
+                            <img class="card-copy-icon" alt="" src="./assets/copy.png">
+                            <p class="font-pri">Copy</p>
+                        </button>
+                        <button class="call-button btn">
+                            <img class="card-copy-icon call-icon" alt="" src="./assets/call.png">
+                            <p class="font-pri">Call</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="card-icon-parent">
+                    <div class="card-icon">
+                        <div class="card-icon-child" style="background-color: #dfefff;">
+                        </div>
+                        <img class="card-icon-img" alt="" src="./assets/police.png">
+                    </div>
+                    <img class="heart-icon" alt="" src="./assets/heart2.png">
+                </div>
+                <div class="card-frame-parent">
+                    <div class="card-parent">
+                        <h1 class="card-head bn-font">পুলিশ</h1>
+                        <div class="card-sub-head font-pri">Police</div>
+                    </div>
+                    <div class="card-title-parent">
+                        <p class="number font-pri">999</p>
+                        <div class="card-title-bg">
+                            <p class="card-title bn-font">পুলিশ</p>
+                        </div>
+                    </div>
+                    <div class="card-button-parent">
+                        <button class="copy-button btn">
+                            <img class="card-copy-icon" alt="" src="./assets/copy.png">
+                            <p class="font-pri">Copy</p>
+                        </button>
+                        <button class="call-button btn">
+                            <img class="card-copy-icon call-icon" alt="" src="./assets/call.png">
+                            <p class="font-pri">Call</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="card-icon-parent">
+                    <div class="card-icon">
+                        <div class="card-icon-child" style="background-color: #FFE3E2;">
+                        </div>
+                        <img class="card-icon-img" alt="" src="./assets/fire-service.png">
+                    </div>
+                    <img class="heart-icon" alt="" src="./assets/heart2.png">
+                </div>
+                <div class="card-frame-parent">
+                    <div class="card-parent">
+                        <h1 class="card-head bn-font">ফায়ার সার্ভিস</h1>
+                        <div class="card-sub-head font-pri">Fire Service</div>
+                    </div>
+                    <div class="card-title-parent">
+                        <p class="number font-pri">999</p>
+                        <div class="card-title-bg">
+                            <p class="card-title bn-font">ফায়ার</p>
+                        </div>
+                    </div>
+                    <div class="card-button-parent">
+                        <button class="copy-button btn">
+                            <img class="card-copy-icon" alt="" src="./assets/copy.png">
+                            <p class="font-pri">Copy</p>
+                        </button>
+                        <button class="call-button btn">
+                            <img class="card-copy-icon call-icon" alt="" src="./assets/call.png">
+                            <p class="font-pri">Call</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="card-icon-parent">
+                    <div class="card-icon">
+                        <div class="card-icon-child" style="background-color: #FFE3E2;">
+                        </div>
+                        <img class="card-icon-img" alt="" src="./assets/ambulance.png">
+                    </div>
+                    <img class="heart-icon" alt="" src="./assets/heart2.png">
+                </div>
+                <div class="card-frame-parent">
+                    <div class="card-parent">
+                        <h1 class="card-head bn-font">অ্যাম্বুলেন্স</h1>
+                        <div class="card-sub-head font-pri">Ambulance</div>
+                    </div>
+                    <div class="card-title-parent">
+                        <p class="number font-pri">1994-999999</p>
+                        <div class="card-title-bg">
+                            <p class="card-title bn-font">স্বাস্থ্য</p>
+                        </div>
+                    </div>
+                    <div class="card-button-parent">
+                        <button class="copy-button btn">
+                            <img class="card-copy-icon" alt="" src="./assets/copy.png">
+                            <p class="font-pri">Copy</p>
+                        </button>
+                        <button class="call-button btn">
+                            <img class="card-copy-icon call-icon" alt="" src="./assets/call.png">
+                            <p class="font-pri">Call</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="card-icon-parent">
+                    <div class="card-icon">
+                        <div class="card-icon-child" style="background-color: #dfefff;">
+                        </div>
+                        <img class="card-icon-img" alt="" src="./assets/womenchildren.png">
+                    </div>
+                    <img class="heart-icon" alt="" src="./assets/heart2.png">
+                </div>
+                <div class="card-frame-parent">
+                    <div class="card-parent">
+                        <h1 class="card-head bn-font">নারী ও শিশু সহায়তা</h1>
+                        <div class="card-sub-head font-pri" id="wCh">Women & Child Helpline</div>
+                    </div>
+                    <div class="card-title-parent">
+                        <p class="number font-pri">109</p>
+                        <div class="card-title-bg">
+                            <p class="card-title bn-font">সহায়তা</p>
+                        </div>
+                    </div>
+                    <div class="card-button-parent">
+                        <button class="copy-button btn">
+                            <img class="card-copy-icon" alt="" src="./assets/copy.png">
+                            <p class="font-pri">Copy</p>
+                        </button>
+                        <button class="call-button btn">
+                            <img class="card-copy-icon call-icon" alt="" src="./assets/call.png">
+                            <p class="font-pri">Call</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="card-icon-parent">
+                    <div class="card-icon">
+                        <div class="card-icon-child" style="background-color: #dfefff;">
+                        </div>
+                        <img class="card-icon-img" alt="" src="./assets/dudok.png">
+                    </div>
+                    <img class="heart-icon" alt="" src="./assets/heart2.png">
+                </div>
+                <div class="card-frame-parent">
+                    <div class="card-parent">
+                        <h1 class="card-head bn-font">দুদক</h1>
+                        <div class="card-sub-head font-pri">Anti-Corruption</div>
+                    </div>
+                    <div class="card-title-parent">
+                        <p class="number font-pri">106</p>
+                        <div class="card-title-bg">
+                            <p class="card-title bn-font">সরকারি</p>
+                        </div>
+                    </div>
+                    <div class="card-button-parent">
+                        <button class="copy-button btn">
+                            <img class="card-copy-icon" alt="" src="./assets/copy.png">
+                            <p class="font-pri">Copy</p>
+                        </button>
+                        <button class="call-button btn">
+                            <img class="card-copy-icon call-icon" alt="" src="./assets/call.png">
+                            <p class="font-pri">Call</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="card-icon-parent">
+                    <div class="card-icon">
+                        <div class="card-icon-child" style="background-color: #fffeb9;">
+                        </div>
+                        <img class="card-icon-img" alt="" src="./assets/power.png">
+                    </div>
+                    <img class="heart-icon" alt="" src="./assets/heart2.png">
+                </div>
+                <div class="card-frame-parent">
+                    <div class="card-parent">
+                        <h1 class="card-head bn-font">বিদ্যুৎ বিভ্রাট</h1>
+                        <div class="card-sub-head font-pri">Electricity Outage</div>
+                    </div>
+                    <div class="card-title-parent">
+                        <p class="number font-pri">16216</p>
+                        <div class="card-title-bg">
+                            <p class="card-title bn-font">বিদ্যুৎ</p>
+                        </div>
+                    </div>
+                    <div class="card-button-parent">
+                        <button class="copy-button btn">
+                            <img class="card-copy-icon" alt="" src="./assets/copy.png">
+                            <p class="font-pri">Copy</p>
+                        </button>
+                        <button class="call-button btn">
+                            <img class="card-copy-icon call-icon" alt="" src="./assets/call.png">
+                            <p class="font-pri">Call</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="card-icon-parent">
+                    <div class="card-icon">
+                        <div class="card-icon-child" style="background-color: #f8dfff;">
+                        </div>
+                        <img class="card-icon-img" alt="" src="./assets/brac.png">
+                    </div>
+                    <img class="heart-icon" alt="" src="./assets/heart2.png">
+                </div>
+                <div class="card-frame-parent">
+                    <div class="card-parent">
+                        <h1 class="card-head bn-font">ব্র্যাক</h1>
+                        <div class="card-sub-head font-pri">Brac</div>
+                    </div>
+                    <div class="card-title-parent">
+                        <p class="number font-pri">16445</p>
+                        <div class="card-title-bg">
+                            <p class="card-title bn-font">এনজিও</p>
+                        </div>
+                    </div>
+                    <div class="card-button-parent">
+                        <button class="copy-button btn">
+                            <img class="card-copy-icon" alt="" src="./assets/copy.png">
+                            <p class="font-pri">Copy</p>
+                        </button>
+                        <button class="call-button btn">
+                            <img class="card-copy-icon call-icon" alt="" src="./assets/call.png">
+                            <p class="font-pri">Call</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="card-icon-parent">
+                    <div class="card-icon">
+                        <div class="card-icon-child" style="background-color: #e6cd97c2;">
+                        </div>
+                        <img class="card-icon-img" alt="" src="./assets/Bangladesh-Railway.png">
+                    </div>
+                    <img class="heart-icon" alt="" src="./assets/heart2.png">
+                </div>
+                <div class="card-frame-parent">
+                    <div class="card-parent">
+                        <h1 class="card-head bn-font">বাংলাদেশ রেলওয়ে</h1>
+                        <div class="card-sub-head font-pri">Bangladesh Railway</div>
+                    </div>
+                    <div class="card-title-parent">
+                        <p class="number font-pri">163</p>
+                        <div class="card-title-bg">
+                            <p class="card-title bn-font">পরিবহন</p>
+                        </div>
+                    </div>
+                    <div class="card-button-parent">
+                        <button class="copy-button btn">
+                            <img class="card-copy-icon" alt="" src="./assets/copy.png">
+                            <p class="font-pri">Copy</p>
+                        </button>
+                        <button class="call-button btn">
+                            <img class="card-copy-icon call-icon" alt="" src="./assets/call.png">
+                            <p class="font-pri">Call</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- call history ---------------------------------------------->
+
+      
+        <div class="call-history">
+            <div class="history-head">
+                <div class="call-title">
+                    <img src="./assets/history.png" alt="" class="history-icon">
+                    <h2 class="font-pri call-title-head" >Call History</h2>
+                </div>
+                <button class="history-clear-btn btn" id="clearBtn">Clear</button>
+            </div>
+            <div class="history-card-container" id="historyContainer">
+                <div class="history-card" style="display: none;">
+                    <div class="history-card-parent">
+                        <div class="history-info">
+                            <h1 class="histoy-title">জাতীয় জরুরি সেবা</h1>
+                            <div class="history-sub-title">
+                                <h3 class="history-num">999</h3>
+                            </div>
+                        </div>
+                        <p class="time">11:36:58 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./resources/script.js"></script>
+</body>
+
+</html>
